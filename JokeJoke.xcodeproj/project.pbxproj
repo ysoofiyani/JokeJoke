@@ -19,6 +19,8 @@
 		3B2810152545153F009D6F62 /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810142545153F009D6F62 /* JokeService.swift */; };
 		3B28101D2545168A009D6F62 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28101C2545168A009D6F62 /* Urls.swift */; };
 		3B2810452545D8AC009D6F62 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810442545D8AC009D6F62 /* JokeViewModel.swift */; };
+		3B28104D2545E0C9009D6F62 /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28104B2545E0C9009D6F62 /* JokeTableViewCell.swift */; };
+		3B28104E2545E0C9009D6F62 /* JokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B28104C2545E0C9009D6F62 /* JokeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3B2810142545153F009D6F62 /* JokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
 		3B28101C2545168A009D6F62 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		3B2810442545D8AC009D6F62 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
+		3B28104B2545E0C9009D6F62 /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
+		3B28104C2545E0C9009D6F62 /* JokeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +111,13 @@
 		3B280FCD2544BCE9009D6F62 /* JokeJoke */ = {
 			isa = PBXGroup;
 			children = (
+				3B28104A2545E09F009D6F62 /* View */,
+				3B2810492545DBD3009D6F62 /* Controller */,
 				3B2810432545D65E009D6F62 /* ViewModel */,
 				3B28100B2544EE8C009D6F62 /* Service */,
 				3B2810022544EDEF009D6F62 /* Model */,
 				3B280FCE2544BCE9009D6F62 /* AppDelegate.swift */,
 				3B280FD02544BCE9009D6F62 /* SceneDelegate.swift */,
-				3B280FD22544BCE9009D6F62 /* ViewController.swift */,
-				3B280FD42544BCE9009D6F62 /* Main.storyboard */,
 				3B280FD72544BCEE009D6F62 /* Assets.xcassets */,
 				3B280FD92544BCEE009D6F62 /* LaunchScreen.storyboard */,
 				3B280FDC2544BCEE009D6F62 /* Info.plist */,
@@ -162,6 +166,24 @@
 				3B2810442545D8AC009D6F62 /* JokeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B2810492545DBD3009D6F62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B280FD22544BCE9009D6F62 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B28104A2545E09F009D6F62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B280FD42544BCE9009D6F62 /* Main.storyboard */,
+				3B28104B2545E0C9009D6F62 /* JokeTableViewCell.swift */,
+				3B28104C2545E0C9009D6F62 /* JokeTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +291,7 @@
 			files = (
 				3B280FDB2544BCEE009D6F62 /* LaunchScreen.storyboard in Resources */,
 				3B280FD82544BCEE009D6F62 /* Assets.xcassets in Resources */,
+				3B28104E2545E0C9009D6F62 /* JokeTableViewCell.xib in Resources */,
 				3B280FD62544BCE9009D6F62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +323,7 @@
 				3B2810452545D8AC009D6F62 /* JokeViewModel.swift in Sources */,
 				3B2810042544EE1D009D6F62 /* JokeModel.swift in Sources */,
 				3B28101D2545168A009D6F62 /* Urls.swift in Sources */,
+				3B28104D2545E0C9009D6F62 /* JokeTableViewCell.swift in Sources */,
 				3B280FD12544BCE9009D6F62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

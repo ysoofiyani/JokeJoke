@@ -7,11 +7,13 @@
 
 import Foundation
 
-struct JokeService {
+class JokeService {
     
+    static let shared = JokeService()
+   
     private var dataTask: URLSessionDataTask?
     
-    mutating func getJokes(completion: @escaping (Result<[JokeModel], Error>) -> Void) {
+     func getJokes(completion: @escaping (Result<[JokeModel], Error>) -> Void) {
         
         guard let url = URL(string: Urls().jokeUrl) else { return }
         
