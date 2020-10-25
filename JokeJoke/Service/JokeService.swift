@@ -23,7 +23,7 @@ struct JokeService {
                 return
             }
             
-            guard let response = response as? HTTPURLResponse, let date = data else {
+            guard let _ = response as? HTTPURLResponse, let date = data else {
                 return
             }
             

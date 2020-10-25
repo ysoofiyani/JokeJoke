@@ -18,6 +18,7 @@
 		3B2810042544EE1D009D6F62 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810032544EE1D009D6F62 /* JokeModel.swift */; };
 		3B2810152545153F009D6F62 /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810142545153F009D6F62 /* JokeService.swift */; };
 		3B28101D2545168A009D6F62 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28101C2545168A009D6F62 /* Urls.swift */; };
+		3B2810452545D8AC009D6F62 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810442545D8AC009D6F62 /* JokeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3B2810032544EE1D009D6F62 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
 		3B2810142545153F009D6F62 /* JokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
 		3B28101C2545168A009D6F62 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		3B2810442545D8AC009D6F62 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		3B280FCD2544BCE9009D6F62 /* JokeJoke */ = {
 			isa = PBXGroup;
 			children = (
+				3B2810432545D65E009D6F62 /* ViewModel */,
 				3B28100B2544EE8C009D6F62 /* Service */,
 				3B2810022544EDEF009D6F62 /* Model */,
 				3B280FCE2544BCE9009D6F62 /* AppDelegate.swift */,
@@ -151,6 +154,14 @@
 				3B28101C2545168A009D6F62 /* Urls.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		3B2810432545D65E009D6F62 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B2810442545D8AC009D6F62 /* JokeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 				3B2810152545153F009D6F62 /* JokeService.swift in Sources */,
 				3B280FD32544BCE9009D6F62 /* ViewController.swift in Sources */,
 				3B280FCF2544BCE9009D6F62 /* AppDelegate.swift in Sources */,
+				3B2810452545D8AC009D6F62 /* JokeViewModel.swift in Sources */,
 				3B2810042544EE1D009D6F62 /* JokeModel.swift in Sources */,
 				3B28101D2545168A009D6F62 /* Urls.swift in Sources */,
 				3B280FD12544BCE9009D6F62 /* SceneDelegate.swift in Sources */,
