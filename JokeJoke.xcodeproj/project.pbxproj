@@ -15,6 +15,9 @@
 		3B280FDB2544BCEE009D6F62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B280FD92544BCEE009D6F62 /* LaunchScreen.storyboard */; };
 		3B280FE62544BCEE009D6F62 /* JokeJokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B280FE52544BCEE009D6F62 /* JokeJokeTests.swift */; };
 		3B280FF12544BCEE009D6F62 /* JokeJokeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B280FF02544BCEE009D6F62 /* JokeJokeUITests.swift */; };
+		3B2810042544EE1D009D6F62 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810032544EE1D009D6F62 /* JokeModel.swift */; };
+		3B2810152545153F009D6F62 /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810142545153F009D6F62 /* JokeService.swift */; };
+		3B28101D2545168A009D6F62 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28101C2545168A009D6F62 /* Urls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		3B280FEC2544BCEE009D6F62 /* JokeJokeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeJokeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B280FF02544BCEE009D6F62 /* JokeJokeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeJokeUITests.swift; sourceTree = "<group>"; };
 		3B280FF22544BCEE009D6F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2810032544EE1D009D6F62 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		3B2810142545153F009D6F62 /* JokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
+		3B28101C2545168A009D6F62 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		3B280FCD2544BCE9009D6F62 /* JokeJoke */ = {
 			isa = PBXGroup;
 			children = (
+				3B28100B2544EE8C009D6F62 /* Service */,
+				3B2810022544EDEF009D6F62 /* Model */,
 				3B280FCE2544BCE9009D6F62 /* AppDelegate.swift */,
 				3B280FD02544BCE9009D6F62 /* SceneDelegate.swift */,
 				3B280FD22544BCE9009D6F62 /* ViewController.swift */,
@@ -126,6 +134,23 @@
 				3B280FF22544BCEE009D6F62 /* Info.plist */,
 			);
 			path = JokeJokeUITests;
+			sourceTree = "<group>";
+		};
+		3B2810022544EDEF009D6F62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B2810032544EE1D009D6F62 /* JokeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B28100B2544EE8C009D6F62 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3B2810142545153F009D6F62 /* JokeService.swift */,
+				3B28101C2545168A009D6F62 /* Urls.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2810152545153F009D6F62 /* JokeService.swift in Sources */,
 				3B280FD32544BCE9009D6F62 /* ViewController.swift in Sources */,
 				3B280FCF2544BCE9009D6F62 /* AppDelegate.swift in Sources */,
+				3B2810042544EE1D009D6F62 /* JokeModel.swift in Sources */,
+				3B28101D2545168A009D6F62 /* Urls.swift in Sources */,
 				3B280FD12544BCE9009D6F62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
