@@ -14,14 +14,31 @@ class JokeTableViewCell: UITableViewCell {
     
     
     func configure(jokeViewModel: JokeViewModel){
-        textLabel?.numberOfLines = 0
         textLabel?.text = jokeViewModel.setup
+        detailTextLabel?.text = jokeViewModel.punchline
+    }
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        
+
+        // cell customization
+        textLabel?.numberOfLines = 0
+        detailTextLabel?.numberOfLines = 0
+        textLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        textLabel?.numberOfLines = 0
+        detailTextLabel?.textColor = .black
+        detailTextLabel?.font = UIFont.systemFont(ofSize: 12, weight: .light)
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
     }
     
    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,5 +46,7 @@ class JokeTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
 }

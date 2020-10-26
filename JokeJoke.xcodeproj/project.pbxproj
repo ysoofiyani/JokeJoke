@@ -21,6 +21,7 @@
 		3B2810452545D8AC009D6F62 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2810442545D8AC009D6F62 /* JokeViewModel.swift */; };
 		3B28104D2545E0C9009D6F62 /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B28104B2545E0C9009D6F62 /* JokeTableViewCell.swift */; };
 		3B28104E2545E0C9009D6F62 /* JokeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B28104C2545E0C9009D6F62 /* JokeTableViewCell.xib */; };
+		3BB32B5625464B030098E1B3 /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB32B5525464B030098E1B3 /* JokeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3B2810442545D8AC009D6F62 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		3B28104B2545E0C9009D6F62 /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
 		3B28104C2545E0C9009D6F62 /* JokeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JokeTableViewCell.xib; sourceTree = "<group>"; };
+		3BB32B5525464B030098E1B3 /* JokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				3B280FD72544BCEE009D6F62 /* Assets.xcassets */,
 				3B280FD92544BCEE009D6F62 /* LaunchScreen.storyboard */,
 				3B280FDC2544BCEE009D6F62 /* Info.plist */,
+				3BB32B5525464B030098E1B3 /* JokeTableViewController.swift */,
 			);
 			path = JokeJoke;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				3B28101D2545168A009D6F62 /* Urls.swift in Sources */,
 				3B28104D2545E0C9009D6F62 /* JokeTableViewCell.swift in Sources */,
 				3B280FD12544BCE9009D6F62 /* SceneDelegate.swift in Sources */,
+				3BB32B5625464B030098E1B3 /* JokeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getJokes()
+        setupTableView()
+        
+        
+    }
+    
+    func setupTableView() {
         tableView.dataSource = self
         tableView.register(JokeTableViewCell.self, forCellReuseIdentifier: JokeTableViewCell.identifier)
     }
@@ -45,19 +51,18 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("jokesCount: \(jokeViewModels.count)")
         return jokeViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//        cell.textLabel?.numberOfLines = 0
-//        cell.textLabel?.text = jokeViewModels[indexPath.row].setup
-        let cell = tableView.dequeueReusableCell(withIdentifier: JokeTableViewCell.identifier, for: indexPath) as! JokeTableViewCell
         let jokeViewModel = jokeViewModels[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: JokeTableViewCell.identifier, for: indexPath) as! JokeTableViewCell
         cell.configure(jokeViewModel: jokeViewModel)
         return cell
     }
+    
+    
+    
     
     
 }
